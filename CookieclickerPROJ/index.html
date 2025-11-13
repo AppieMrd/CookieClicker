@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Left Sidebar - Autoclickers -->
+        <div class="sidebar left-sidebar">
+            <h3 class="sidebar-title">🛒 Winkel</h3>
+            <div id="autoclickers-container" class="items-container">
+                <!-- Autoclickers worden hier dynamisch toegevoegd -->
+            </div>
+        </div>
+
+        <!-- Center - Cookie Clicker -->
+        <div class="center-section">
+            <div class="game-header">
+                <h1 class="game-title">🍪 Cookie Clicker</h1>
+                <div class="stats-display">
+                    <div class="cookie-count">
+                        <h2 id="cookie-display">0</h2>
+                        <p>cookies</p>
+                    </div>
+                    <div class="per-second">
+                        <h4 id="cps-display">0</h4>
+                        <p>per seconde</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cookie Button -->
+            <div class="cookie-container">
+                <button id="cookie-button" class="cookie-button">🍪</button>
+                <div id="click-particles"></div>
+            </div>
+
+            <!-- Controls -->
+            <div class="controls">
+                <button id="theme-toggle" class="btn btn-secondary">
+                    🌙 Thema
+                </button>
+                <button id="save-button" class="btn btn-success">
+                    💾 Opslaan
+                </button>
+                <button id="reset-button" class="btn btn-danger">
+                    🔄 Reset
+                </button>
+            </div>
+        </div>
+
+        <!-- Rechte Sidebar - Upgrades -->
+        <div class="sidebar right-sidebar">
+            <h3 class="sidebar-title">⭐ Upgrades</h3>
+            <div id="upgrades-container" class="items-container">
+                <!-- Upgrades worden hier dynamisch toegevoegd -->
+            </div>
+
+            <h3 class="sidebar-title inventory-title">🎒 Inventaris</h3>
+            <div id="inventory-container" class="inventory">
+                <!-- Inventory items worden hier getoond -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Goude Cookie (Speciale Event) -->
+    <div id="golden-cookie" class="golden-cookie" style="display: none;">
+        ✨🍪✨
+    </div>
+
+    <!-- Notification Toast -->
+    <div id="notification-toast" class="toast-notification" style="display: none;"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
